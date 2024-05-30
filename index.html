@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback UI</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <h1 class="heading">Feedback UI</h1>
+      <form>
+        <label for="uname">
+          <i class="fa fa-solid fa-user"></i>
+          Name
+        </label>
+        <input
+          type="text"
+          id="uname"
+          name="uname"
+          placeholder="John Doe"
+          required
+        />
+        <br />
+        <label for="email">
+          <i class="fa fa-solid fa-envelope"></i>
+          Email Address
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="johndoe@xyz.com"
+          required
+        />
+      </form>
+      <div class="ratings-conatiner" id="rating-container">
+        <div class="rating">
+          <img src="https://cdn-icons-png.flaticon.com/512/520/520447.png" />
+          <small>UNHAPPY</small>
+        </div>
+        <div class="rating">
+          <img src="https://cdn-icons-png.flaticon.com/512/520/520438.png" />
+          <small>NEUTRAL</small>
+        </div>
+        <div class="rating">
+          <img src="https://cdn-icons-png.flaticon.com/512/520/520433.png" />
+          <small>SATISFIED</small>
+        </div>
+      </div>
+      <button class="btn" id="btn">Send Review</button>
+    </div>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
